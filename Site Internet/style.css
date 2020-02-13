@@ -1,0 +1,135 @@
+.cadre{
+	width: 87%;
+	margin-top: 5%;
+}
+
+/*Pour event.php*/
+.flou{
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: 0;
+	padding: 0;
+	padding-top: 50px;
+	width: 100%;
+	height: 100%;
+	color: black;
+}
+
+.flou:before{
+	content: "";
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: url(montpellier.jpg);
+	background-size: cover;
+	z-index: -1;
+	-webkit-filter: blur(15px);
+	background-repeat: no-repeat;
+}
+
+
+.map{
+	height: 400px;
+}
+
+/*Pour listeEvent.php*/
+.eventxt
+{
+	height: auto;
+	margin-bottom: 1%;
+}
+.lienEvent{
+	text-decoration: none;
+	color: black;
+}
+
+.lienEvent:hover{
+	text-decoration: none;
+	color: black;
+}
+
+#profil
+{
+	padding: 3px;
+	padding-right:0;
+	border: solid  1px;
+	border-color: grey;
+	border-radius: 15px;
+	margin-right: 15px; 
+}
+
+#txticon
+{
+	margin-right: 12px; 
+	color: #fff;
+	position: relative;
+	top: 5px;
+}
+
+#usericon
+{
+	padding-top: 0px;
+	padding-right: 0px;
+}
+
+
+#anim 
+{			
+	position: relative;
+	margin: auto;
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	border-bottom-left-radius: 15px; 
+	border-bottom-right-radius: 15px;
+}
+
+.valid
+{
+	background-color: #81c8f0;
+}
+
+.invalid
+{
+	background-color: #e74c3c;
+}
+#header
+{
+	overflow: visible;
+}
+
+.fa-star
+{
+padding: 4.5%;
+font-size: 15px;
+text-align: center;
+text-decoration: none;
+border-radius: 0;
+width: 0px;
+margin: 0;
+}
+#stardiv
+{
+	width: auto;
+}
+.checked{
+
+	color: orange;
+}
+
+/*Pour index.php*/
+#more
+{
+	padding: 15px;
+	border: solid  2px;
+	border-color: grey;
+	border-radius : 25px;
+	text-decoration: none;
+	color: #000;
+}
+#more:hover
+{
+	
+	background-color:#f2f2f2;
+}
+
