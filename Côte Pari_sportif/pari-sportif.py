@@ -11,30 +11,7 @@ import datetime
 from datetime import timedelta as td
 
 
-def isConnect():
-    chemin = 'C:\\Users\Dass\Desktop\chromedriver.exe'
-    driver = webdriver.Chrome(chemin)
-    driver.get("https://portail-guest.supagro.inra.fr:8003/index.php?zone=portail_cite")
-    time.sleep(3)
-    try:
-        connect = driver.find_element_by_tag_name("body")
 
-        if connect.text=="You are connected.":
-            print("connecter")
-        else:
-            print("non connect")
-            pseudo = driver.find_element_by_xpath('//"*"[@name="auth_user"]')
-            password = driver.find_element_by_xpath('//"*"[@name="auth_pass"]')
-            envoyer = driver.find_element_by_xpath('//"*"[@name="accept"]')
-            time.sleep(6)
-            pseudo.send_keys('_dassouk82')
-            password.send_keys('j46BEri6')
-            time.sleep(2)
-            envoyer.click()
-            time.sleep(60)
-        driver.quit()
-    except NoSuchElementException:
-        print("non trouver")
 def isOkeyMatch(game):
     isfinish = game.find("div", class_="status_name")
     probability = game.find("div", class_="godds")
@@ -467,7 +444,6 @@ while(True):
     recolte = heureDuRecolte()
     print("heure du recolte :", recolte/(3600))
     #time.sleep(recolte)
-    isConnect()
     liste = match()
     afficheMatch(liste)
     combi,heureC,minC = combiner(deepcopy(liste))
@@ -480,7 +456,7 @@ while(True):
     if len(combi) > 0:
         time.sleep(k)
         time.sleep(60 * 15)
-        isConnect()
+   
         resultat = resultatMatch()
         print(checkCombi(resultat , combi))
         if reforme != 0:
