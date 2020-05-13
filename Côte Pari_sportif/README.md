@@ -1,0 +1,3 @@
+ce projet est un script python qui s'execute tout les jours et qui consiste à aller faire du scrapping sur le site fctables.com pour recolter les données du  match d'aujord'hui, ces données sont : le match en lui-même c'est à dire les deux equipes qui jouent, l'heure du debut du jeu, les 10 précedents scores de chaque équipe, et si possible la composition du match.
+en suite je effectue un algorithme de probabilité sur chaque équipe pour faire une classification, puis filtrer les matchs qui ont plus de probabilité de passer.
+les matchs selectionnés me seront envoyés par mail chaque 10h du matin, et à la fin de tout les matchs un autre mail avec les resultats des matchs selectionnés me sera envoyé.  
