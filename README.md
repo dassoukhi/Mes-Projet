@@ -1,1 +1,1 @@
-Il s'agit de mes differents projets realisés.
+Il s'agit des différent  projets que j'ai réalisés.
