@@ -1,0 +1,3 @@
+soduko est un jeu en forme de grille, Le but du jeu est de remplir la grille avec une série de chiffres tous différents, qui ne se trouvent jamais plus d’une fois sur une même ligne, dans une même colonne ou dans une même région (également appelée « bloc  », « groupe », « secteur » ou « sous-grille »). La plupart du temps, les symboles sont des chiffres allant de 1 à 9, les régions étant alors des carrés de 3 × 3. Quelques chiffres sont déjà disposés dans la grille, ce qui autorise une résolution progressive du problème complet.
+
+Vous pouvez aussi appuyer sur "ESPACE" de votre clavier pour declencher le solveur et resoudre votre grille automatiquement.  
